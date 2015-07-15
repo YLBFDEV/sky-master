@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@drawable/item_attendance_exception_bg"
+                  android:layout_margin="@dimen/view_margin">
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <TextView style="@style/field_title"
+                      android:text="@string/exception_date"/>
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="2"
+                      android:id="@+id/exception_date"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/item_stroke"/>
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <TextView style="@style/field_title"
+                      android:text="@string/exception_state"/>
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="2"
+                      android:id="@+id/state"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/item_stroke"/>
+        <TextView style="@style/field_title"
+                  android:text="@string/exception_declare"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="@dimen/view_padding"
+                  android:paddingRight="@dimen/view_padding"
+                  android:paddingBottom="@dimen/view_padding"
+                  android:id="@+id/declare"/>
+    </LinearLayout>
+</FrameLayout>

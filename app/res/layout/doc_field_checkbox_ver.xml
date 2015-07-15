@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+            android:id="@+id/field_title"
+            style="@style/field_title"
+            android:padding="@dimen/view_padding"
+            android:gravity="center"/>
+    <TableLayout
+            android:id="@+id/tablelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+</merge>

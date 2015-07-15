@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/top_bar"></include>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <WebView
+                    android:id="@+id/wv_news_detail_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scrollbars="none"/>
+
+            <RelativeLayout
+                    android:id="@+id/rl_news_detail_footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/top_bar_bg">
+
+                <Button
+                        android:id="@+id/btn_news_praise"
+                        android:layout_width="60dip"
+                        android:layout_height="50dp"
+                        android:text="赞"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_alignBottom="@+id/et_news_comment"
+                        android:layout_alignParentLeft="true"
+                        android:background="@android:color/transparent"
+                        />
+
+                <Button
+                        android:id="@+id/btn_news_comment_commit"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:text="评"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignBottom="@+id/et_news_comment"
+                        android:background="@android:color/transparent"
+                        />
+
+                <EditText
+                        android:id="@+id/et_news_comment"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/btn_news_comment_commit"
+                        android:layout_toRightOf="@+id/btn_news_praise"
+                        android:hint="此处填写评论"
+                        android:maxLines="5"
+                        android:singleLine="false"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/network_error"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

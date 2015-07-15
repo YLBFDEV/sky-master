@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <RelativeLayout
+            android:id="@+id/home_header"
+            style="@style/home_header">
+        <Button
+                style="@style/top_left_button"
+                android:id="@+id/setting"
+                android:background="@drawable/ic_setting"
+                android:onClick="toSetting"/>
+
+        <TextView
+                android:id="@+id/name"
+                style="@style/home_top_title_text_user_name"/>
+
+        <Button
+                style="@style/top_right_button"
+                android:id="@+id/message"
+                android:background="@drawable/ic_message"
+                android:onClick="toIM"/>
+    </RelativeLayout>
+
+    <RadioGroup
+            android:id="@+id/window_foot"
+            style="@style/window_foot">
+        <RadioButton
+                style="@style/window_foot_button"
+                android:drawableLeft="@drawable/ic_add_affair"
+                android:text="@string/add_affair"
+                android:onClick="showAffairMenu"/>
+
+        <View style="@style/window_foot_split"/>
+
+        <RadioButton
+                style="@style/window_foot_button"
+                android:drawableLeft="@drawable/ic_sign_on"
+                android:text="@string/sign_on"
+                android:onClick="toSign"/>
+    </RadioGroup>
+
+    <LinearLayout
+            android:id="@+id/page_indicator_container"
+            style="@style/page_indicator_container"
+            android:layout_above="@id/window_foot"/>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/module_page_container"
+            style="@style/module_page_container"
+            android:layout_below="@id/home_header"
+            android:layout_above="@id/page_indicator_container"/>
+
+    <include layout="@layout/affair_shortcut_menu_board"/>
+
+</RelativeLayout>
+

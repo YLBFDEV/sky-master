@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center_horizontal"
+              android:background="@drawable/bg_login">
+
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/login_app_logo_margin_top"
+               android:src="@drawable/login_app_logo"/>
+
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/login_app_title_margin_top"
+               android:src="@drawable/login_app_title"/>
+
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/login_app_version_margin_top"
+               android:src="@drawable/login_app_version"/>
+
+    <LinearLayout
+            style="@style/login_editor_container"
+            android:id="@+id/login_container">
+
+        <EditText
+                style="@style/editor_base"
+                android:id="@+id/user_name"
+                android:drawableLeft="@drawable/login_icon_user"
+                android:hint="@string/user_name"/>
+
+
+        <View style="@style/login_editor_split"/>
+
+        <EditText
+                style="@style/editor_base"
+                android:id="@+id/password"
+                android:drawableLeft="@drawable/login_icon_password"
+                android:hint="@string/password"
+                android:password="true">
+        </EditText>
+    </LinearLayout>
+
+    <Button
+            style="@style/login_button"
+            android:id="@+id/login"
+            android:text="@string/login"
+            android:onClick="login"/>
+
+    <!--    <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/login_app_copyright_margin_top"
+                   android:src="@drawable/login_app_copyright"/>-->
+</LinearLayout>

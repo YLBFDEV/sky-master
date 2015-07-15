@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/set_bg_head">
+
+        <ImageView
+                android:id="@+id/user_avatar"
+                style="@style/setting_user_avatar"/>
+
+        <LinearLayout
+                style="@style/setting_user_info_container">
+
+            <TextView
+                    android:id="@+id/user_name"
+                    style="@style/setting_user_info_text"
+                    android:text="SINOYU"/>
+
+            <TextView
+                    android:id="@+id/department"
+                    style="@style/setting_user_info_text"
+                    android:text="UI设计与移动应用部"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="@color/bg_setting_menu">
+        <TextView
+                style="@style/setting_menu_item"
+                android:id="@+id/personal_space_entry"
+                android:drawableLeft="@drawable/set_ic_personal_space"
+                android:text="@string/personal_space"/>
+
+        <LinearLayout style="@style/setting_menu_split"/>
+
+        <TextView
+                style="@style/setting_menu_item"
+                android:id="@+id/favorites_entry"
+                android:drawableLeft="@drawable/set_ic_favorites"
+                android:text="@string/my_favorites"/>
+
+        <LinearLayout style="@style/setting_menu_split"/>
+
+        <TextView
+                style="@style/setting_menu_item"
+                android:id="@+id/scan_entry"
+                android:drawableLeft="@drawable/set_ic_scan"
+                android:text="@string/scan"/>
+
+        <LinearLayout style="@style/setting_menu_split"/>
+
+        <TextView
+                style="@style/setting_menu_item"
+                android:id="@+id/clear_cache_entry"
+                android:drawableLeft="@drawable/set_ic_clear"
+                android:text="@string/clear_cache"/>
+
+        <LinearLayout style="@style/setting_menu_split"/>
+
+        <TextView
+                style="@style/setting_menu_item"
+                android:id="@+id/notice_entry"
+                android:drawableLeft="@drawable/set_ic_notice"
+                android:text="@string/system_notification"/>
+
+        <LinearLayout style="@style/setting_menu_split"/>
+
+        <TextView
+                style="@style/setting_menu_item"
+                android:id="@+id/theme_center_entry"
+                android:drawableLeft="@drawable/set_ic_style"
+                android:text="@string/app_theme"/>
+
+        <LinearLayout style="@style/setting_menu_split"/>
+
+        <TextView
+                style="@style/setting_menu_item"
+                android:id="@+id/about_entry"
+                android:drawableLeft="@drawable/set_ic_about_version"
+                android:text="@string/about"/>
+
+        <LinearLayout style="@style/setting_menu_split"/>
+
+        <Button
+                style="@style/setting_exit_button"
+                android:id="@+id/exit_entry"
+                android:text="@string/exit_app"/>
+
+    </LinearLayout>
+
+</LinearLayout>

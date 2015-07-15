@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:background="@color/attendance_bg">
+    <include layout="@layout/top_bar"/>
+    <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:layout_marginLeft="@dimen/attendance_button_margin_left"
+            android:layout_marginRight="@dimen/attendance_button_margin_left"
+            android:layout_marginTop="@dimen/attendance_map_margin_top"
+            android:layout_marginBottom="@dimen/attendance_button_margin_top"/>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:id="@+id/text_address"
+              android:textColor="@color/gray"
+              android:textSize="@dimen/textsize_default"
+              android:maxLines="2"
+              android:minHeight="60dp"/>
+    <View android:layout_width="match_parent"
+          android:layout_marginLeft="@dimen/attendance_button_margin_left"
+          android:layout_marginRight="@dimen/attendance_button_margin_left"
+          android:layout_height="1dp"
+          android:background="#a9a9a9"
+          android:padding="@dimen/attendance_button_margin_top"/>
+    <Button
+            android:id="@+id/up_work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="上班考勤"
+            android:textColor="@color/white"
+            android:padding="@dimen/attendance_button_padding"
+            style="@style/attendance_button"
+            android:background="@drawable/button_green"/>
+    <Button
+            android:id="@+id/dow_work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="下班考勤"
+            android:padding="@dimen/attendance_button_padding"
+            style="@style/attendance_button"
+            android:textColor="@color/white"
+            android:background="@drawable/button_blue"/>
+    <Button
+            android:id="@+id/button_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="考勤记录"
+            android:padding="@dimen/attendance_button_padding"
+            android:textColor="@color/white"
+            style="@style/attendance_button"
+            android:layout_marginBottom="@dimen/attendance_button_margin_bottom"
+            android:background="@drawable/button_orange"/>
+</LinearLayout>

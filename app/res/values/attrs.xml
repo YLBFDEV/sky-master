@@ -1,0 +1,149 @@
+<resources>
+
+    <declare-styleable name="SwipeListView">
+        <attr name="swipeOpenOnLongPress" format="boolean"/>
+        <attr name="swipeAnimationTime" format="integer"/>
+        <attr name="swipeOffsetLeft" format="dimension"/>
+        <attr name="swipeOffsetRight" format="dimension"/>
+        <attr name="swipeCloseAllItemsWhenMoveList" format="boolean"/>
+        <attr name="swipeFrontView" format="reference"/>
+        <attr name="swipeBackView" format="reference"/>
+        <attr name="swipeMode" format="enum">
+            <enum name="none" value="0"/>
+            <enum name="both" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="left" value="3"/>
+        </attr>
+        <attr name="swipeActionLeft" format="enum">
+            <enum name="reveal" value="0"/>
+            <enum name="dismiss" value="1"/>
+            <enum name="choice" value="2"/>
+        </attr>
+        <attr name="swipeActionRight" format="enum">
+            <enum name="reveal" value="0"/>
+            <enum name="dismiss" value="1"/>
+            <enum name="choice" value="2"/>
+        </attr>
+        <attr name="swipeDrawableChecked" format="reference"/>
+        <attr name="swipeDrawableUnchecked" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="mode">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="viewAbove" format="reference" />
+        <attr name="viewBehind" format="reference" />
+        <attr name="behindOffset" format="dimension" />
+        <attr name="behindWidth" format="dimension" />
+        <attr name="behindScrollScale" format="float" />
+        <attr name="touchModeAbove">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="touchModeBehind">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="shadowDrawable" format="reference" />
+        <attr name="shadowWidth" format="dimension" />
+        <attr name="fadeEnabled" format="boolean" />
+        <attr name="fadeDegree" format="float" />
+        <attr name="selectorEnabled" format="boolean" />
+        <attr name="selectorDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="doc">
+        <attr name="position">
+            <enum name="lefttopfield" value="0"/>
+            <enum name="righttopfield" value="1"/>
+            <enum name="leftbottomfield" value="2"/>
+            <enum name="rightbottomfield" value="3"/>
+        </attr>
+        <attr name="lefttopfield_background" format="color|reference"/>
+        <attr name="righttopfield_background" format="color|reference"/>
+        <attr name="leftbottomfield_background" format="color|reference"/>
+        <attr name="rightbottomfield_background" format="color|reference"/>\
+
+        <attr name="keyid" format="string"/>
+        <attr name="keyname" format="reference|string"/>
+        <attr name="keyNameTextColor" format="color|reference"/>
+        <attr name="key_gravity">
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+            <enum name="center" value="17"/>
+        </attr>
+        <attr name="editable" format="boolean"/>
+        <attr name="required" format="boolean"/>
+        <attr name="value" format="string"/>
+        <attr name="dictionary" format="reference|string"/>
+        <attr name="action" format="reference|string"/>
+        <attr name="maxWidth" format="integer"/>
+        <attr name="hint" format="reference|string"/>
+        <attr name="divider" format="color|reference"/>
+        <attr name="hideKeyName" format="boolean"/>
+        <attr name="minLines" format="integer"/>
+
+        <!--一行的字段数，小于3列-->
+        <attr name="columnsNum" format="integer"/>
+
+        <attr name="titleLayout" format="reference"/>
+        <attr name="childLayout" format="reference"/>
+        <attr name="options" format="string"/>
+        <attr name="dateFormat" format="string"/>
+        <attr name="center" format="boolean"/>
+        <attr name="textColor" format="color|reference"/>
+        <attr name="clickable" format="reference|boolean"/>
+        <attr name="optionBackground" format="reference"/>
+        <attr name="telescopic" format="boolean"/>
+        <attr name="titleWrap" format="boolean"/>
+
+        <attr name="defaultValue" format="reference|boolean|string"/>
+        <attr name="showCondition" format="reference|boolean"/>
+        <attr name="dialogTitle" format="reference|string"/>
+        <attr name="numColumns" format="reference|integer"/>
+        <attr name="isRequired" format="reference|boolean"/>
+        <attr name="showDefaultValue" format="reference|boolean"/>
+        <attr name="itemText" format="reference|string"/>
+        <attr name="itemKey" format="reference|string"/>
+        <attr name="itemsKey" format="reference|string"/>
+        <attr name="multipleChoice" format="boolean"/>
+        <attr name="isEditable" format="reference|boolean"/>
+        <attr name="relevanceControl" format="reference|string"/>
+        <attr name="relevanceControlValue" format="string"/>
+        <attr name="relevanceControlField" format="string"/>
+        <attr name="drawableRight" format="reference"/>
+        <attr name="drawableLeft" format="reference"/>
+        <attr name="singleLine" format="boolean"/>
+        <attr name="lines" format="integer"/>
+        <attr name="showAddButton" format="boolean"/>
+        <attr name="inputType">
+            <enum name="none" value="0"/>
+            <enum name="identityCard" value="1"/>
+            <enum name="number" value="2"/>
+            <enum name="phone" value="3"/>
+            <enum name="emailAddress" value="32"/>
+        </attr>
+        <attr name="defaultParams" format="string"/>
+        <attr name="relevanceType">
+            <enum name="visibility" value="0"/>
+            <enum name="required" value="1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ImageTextView">
+        <attr name="image" format="integer"/>
+        <attr name="text" format="string|reference"/>
+        <attr name="txtColor" format="color|reference"/>
+        <attr name="txtSize" format="dimension|reference"/>
+        <attr name="showSplit" format="boolean"/>
+        <attr name="alignLeft" format="boolean"/>
+        <attr name="txtBold" format="boolean"/>
+        <attr name="gravity">
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr>
+    </declare-styleable>
+</resources>

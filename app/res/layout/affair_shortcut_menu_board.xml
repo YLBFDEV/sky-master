@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/affair_menu_board_root"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/affair_menu_background"
+                android:visibility="gone">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+    <ImageView
+            android:id="@+id/routine_add"
+            style="@style/affair_menu_board_item_base"
+            android:src="@drawable/routine_ic_add"
+            android:layout_centerInParent="true"/>
+
+    <TextView
+            android:id="@+id/routine_affair"
+            style="@style/affair_menu_board_item_width_text"
+            android:drawableTop="@drawable/routine_ic_application"
+            android:text="@string/shortcut_affair"
+            android:layout_above="@id/routine_add"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/routine_menu_top_margin_center"
+            android:onClick="onApplyAffair"/>
+
+    <TextView
+            android:id="@+id/routine_task"
+            style="@style/affair_menu_board_item_width_text"
+            android:drawableTop="@drawable/routine_ic_task"
+            android:layout_centerHorizontal="true"
+            android:text="@string/shortcut_task"
+            android:layout_below="@id/routine_add"
+            android:layout_marginTop="@dimen/routine_menu_bottom_margin_center"
+            android:onClick="onAddTask"/>
+
+    <TextView
+            android:id="@+id/routine_fee"
+            style="@style/affair_menu_board_item_width_text"
+            android:drawableTop="@drawable/routine_ic_fee"
+            android:text="@string/shortcut_fee"
+            android:layout_alignTop="@id/routine_affair"
+            android:layout_toLeftOf="@id/routine_add"
+            android:layout_marginRight="@dimen/routine_menu_margin_center_left_right"
+            android:layout_marginTop="@dimen/routine_menu_top_left_margin_top"
+            android:onClick="onNewExpenseAccount"/>
+
+    <TextView
+            android:id="@+id/routine_journal"
+            style="@style/affair_menu_board_item_width_text"
+            android:drawableTop="@drawable/routine_ic_journal"
+            android:text="@string/shortcut_journal"
+            android:layout_below="@id/routine_fee"
+            android:layout_toLeftOf="@id/routine_add"
+            android:layout_marginRight="@dimen/routine_menu_margin_center_left_right"
+            android:layout_marginTop="@dimen/routine_menu_bottom_left_margin_top"
+            android:onClick="onAddWorkingLog"/>
+
+    <TextView
+            android:id="@+id/routine_meeting"
+            style="@style/affair_menu_board_item_width_text"
+            android:drawableTop="@drawable/routine_ic_meeting"
+            android:text="@string/shortcut_meeting"
+            android:layout_alignBaseline="@id/routine_fee"
+            android:layout_toRightOf="@id/routine_add"
+            android:layout_marginLeft="@dimen/routine_menu_margin_center_left_right"
+            android:onClick="onApplyMeetingRoom"/>
+
+
+    <TextView
+            android:id="@+id/routine_memo"
+            style="@style/affair_menu_board_item_width_text"
+            android:drawableTop="@drawable/routine_ic_memo"
+            android:text="@string/shortcut_memo"
+            android:layout_alignBaseline="@id/routine_journal"
+            android:layout_toRightOf="@id/routine_add"
+            android:layout_marginLeft="@dimen/routine_menu_margin_center_left_right"
+            android:onClick="onNewMemo"/>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+            android:id="@+id/field_title"
+            style="@style/field_title"
+            android:padding="@dimen/view_padding"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"/>
+    <View android:layout_height="match_parent"
+          android:layout_width="1dp"
+          android:background="@color/transparent"
+          android:id="@+id/divider"/>
+    <LinearLayout
+            android:id="@+id/layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.skytech.android.widgets.NoScrollGridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/attachment_gridView"
+                android:layout_gravity="center_horizontal"
+                android:horizontalSpacing="@dimen/main_content_margin"
+                android:verticalSpacing="@dimen/main_content_margin"
+                android:listSelector="@color/transparent"
+                android:numColumns="3"/>
+    </LinearLayout>
+</merge>

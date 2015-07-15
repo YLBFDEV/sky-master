@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/top_bar"/>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <com.handmark.pulltorefresh.PullToRefreshListView
+                android:id="@+id/lv_notice"
+                style="@style/ListBase"
+                android:scrollbars="none"
+                android:divider="@color/list_divider"
+                android:dividerHeight="0.5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true"
+                />
+
+        <include layout="@layout/network_error"/>
+
+        <include layout="@layout/no_data"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

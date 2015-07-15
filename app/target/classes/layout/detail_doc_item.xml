@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <ImageView
+            android:id="@+id/doc_type_image"
+            android:background="@drawable/doc_file_word"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"/>
+    <RelativeLayout
+
+            android:layout_toRightOf="@+id/doc_type_image"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="22dp"
+                  android:maxEms="10"
+                  android:singleLine="true"
+                  android:ellipsize="end"
+                  android:textColor="@color/black"
+                  android:id="@+id/doc_detail_name"
+                  android:layout_centerVertical="true"
+                />
+        <ImageView
+                android:id="@+id/doc_isfavorited"
+                android:layout_alignParentRight="true"
+                android:layout_width="40dp"
+                android:background="@drawable/doc_ic_unfavorite"
+                android:layout_height="40dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_toRightOf="@+id/doc_type_image"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/publisher_text"
+                  android:text="文档发布人:"
+                  android:textSize="17dp"
+                />
+        <TextView
+                android:layout_toRightOf="@+id/publisher_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/doc_publisher"
+                android:text="张小山"
+                android:textSize="17dp"
+                />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="发布时间:"
+                  android:layout_toLeftOf="@+id/doc_release_time"
+                  android:textSize="17dp"
+                />
+        <TextView
+
+                android:id="@+id/doc_release_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="2015-4-18"
+                android:textSize="17dp"
+                />
+    </RelativeLayout>
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="105dp"
+            android:background="@drawable/docs_liner"/>
+</RelativeLayout>

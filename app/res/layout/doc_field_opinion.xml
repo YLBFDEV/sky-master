@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView  style="@style/field_title"
+              android:layout_gravity="center_vertical"
+              android:id="@+id/field_title"
+              android:padding="@dimen/view_padding"
+              android:gravity="center"/>
+    <View android:layout_height="match_parent"
+          android:layout_width="1dp"
+          android:background="@color/transparent"
+          android:id="@+id/divider"/>
+    <LinearLayout android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:layout_width="0dp"
+                  android:orientation="vertical"
+                  android:id="@+id/opinion_body">
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/field_value"
+                  android:visibility="gone"
+                  android:padding="@dimen/main_content_margin"/>
+        <View android:id="@+id/split"
+              android:layout_width="fill_parent"
+              android:layout_height="2dp"
+              android:visibility="gone"
+              android:background="@drawable/dotted_line"/>
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/signature">
+            <EditText android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:id="@+id/field_edit"
+                      android:gravity="top"
+                      android:minLines="2"
+                      android:padding="@dimen/main_content_margin"
+                      android:visibility="gone"/>
+            <!-- <com.skytech.moa.doc.widgets.slate.SlateView
+                     android:layout_width="match_parent"
+                     android:layout_height="249dp"
+                     android:id="@+id/slate"
+                     android:visibility="gone"/>-->
+            <LinearLayout
+                    android:id="@+id/slateControlPanel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/view_margin"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+                <Button
+                        android:id="@+id/btn_pen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/slate_pen_selector"/>
+                <Button
+                        android:id="@+id/btn_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/slate_keyboard_selector"/>
+                <Button
+                        android:id="@+id/btn_erase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/slate_eraser_selector"/>
+                <Button
+                        android:id="@+id/btn_undo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/slate_undo_selector"/>
+                <Button
+                        android:id="@+id/btn_redo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/slate_do_selector"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

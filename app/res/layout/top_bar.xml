@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_bar_bg">
+    <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/top_bar_button_base"
+            android:src="@drawable/ic_back"
+            android:onClick="finish"/>
+
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/textsize_middle"/>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_centerVertical="true"
+                  android:layout_alignParentRight="true">
+        <ImageView
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/top_bar_button_base"
+                android:visibility="gone"
+                android:src="@drawable/ic_add"/>
+        <ImageView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/top_bar_button_base"
+                android:visibility="gone"
+                android:src="@drawable/ic_search"/>
+        <ImageView
+                android:id="@+id/attachment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/top_bar_button_base"
+                android:visibility="gone"
+                android:src="@drawable/ic_back"/>
+        <Button
+                android:id="@+id/comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看评论"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:background="@color/red"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"/>
+    </LinearLayout>
+</RelativeLayout>

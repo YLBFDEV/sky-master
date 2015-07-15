@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:sky="http://schemas.android.com/apk/res/com.skytech.moa"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/filter_container"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/bg_filter"
+              android:padding="@dimen/view_margin"
+              android:gravity="center"
+              android:orientation="horizontal">
+    <com.skytech.moa.widgets.EditTextWithDelete
+            android:id="@+id/doc_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:hint="请输入关键字搜索"
+            android:background="@drawable/filter_input_bg"/>
+    <Button
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_filter_selector"/>
+</LinearLayout>

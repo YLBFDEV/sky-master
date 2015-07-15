@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/iv_notice_isread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="13dp"
+            android:visibility="invisible"
+            android:src="@drawable/dot_gray"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/tv_notice_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="我是通知标题，我是通知标题，我是通知标题，我是通知标题"
+                android:textSize="22sp"
+                />
+
+        <TextView
+                android:id="@+id/tv_notice_dept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_notice_title"
+                android:layout_marginBottom="5dp"
+                android:text="UI设计及移动应用部"
+                android:textSize="19sp"
+                android:textColor="@color/list_divider"/>
+
+        <TextView
+                android:id="@+id/tv_notice_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_notice_dept"
+                android:layout_below="@id/tv_notice_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="2014-12-25"
+                android:textSize="19sp"
+                android:textColor="@color/list_divider"/>
+
+        <ImageView
+                android:id="@+id/iv_notice_hasattachment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:visibility="invisible"
+                android:src="@drawable/ic_gray_accessory"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

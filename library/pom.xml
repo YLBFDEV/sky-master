@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>sky-master</artifactId>
+        <groupId>com.skytech</groupId>
+        <version>0.8-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>sky-master-library</artifactId>
+    <packaging>jar</packaging>
+    <name>Sky Master Library</name>
+
+
+    <dependencies>
+        <!--local libs-->
+        <dependency>
+            <groupId>asmack</groupId>
+            <artifactId>asmack</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/asmack.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>android-support</groupId>
+            <artifactId>android-support</artifactId>
+            <version>v4</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/android-support-v4.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.nostra13.universalimageloader</groupId>
+            <artifactId>universal-image-loader</artifactId>
+            <version>1.9.4</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/universal-image-loader-1.9.4.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.nineoldandroids</groupId>
+            <artifactId>library</artifactId>
+            <version>2.4.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/com.nineoldandroids-library-2.4.0.jar</systemPath>
+        </dependency>
+    </dependencies>
+</project>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:id="@+id/field_title"
+              android:padding="@dimen/main_content_margin"
+              android:gravity="center"
+              android:text="本文单位"/>
+    <LinearLayout android:layout_height="wrap_content"
+                  android:layout_width="match_parent"
+                  android:orientation="vertical">
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/field_value"
+                  android:visibility="gone"
+                  android:padding="@dimen/view_padding"/>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/field_edit"
+                  android:minLines="3"
+                  android:gravity="top"
+                  android:background="@drawable/edit_bg_selector"/>
+    </LinearLayout>
+</merge>

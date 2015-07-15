@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <include layout="@layout/docs_library_head"/>
+    <LinearLayout
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+        <ImageView
+                android:layout_toLeftOf="@+id/grid_view_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/doc_ic_search"
+                android:layout_centerVertical="true"
+                />
+        <ImageView
+                android:id="@+id/module_list_change"
+                android:background="@drawable/ic_module"
+                android:onClick="gridListChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+    </LinearLayout>
+    <RelativeLayout
+            android:id="@+id/ListViewRelative"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <ListView
+                android:id="@+id/docLibraryList"
+                android:layout_width="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:scrollbars="none"
+                android:layout_height="wrap_content">
+        </ListView>
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/GridViewRelative"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <GridView
+                  android:id="@+id/docLibraryGrid"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:layout_margin="18dp"
+                  android:numColumns="3"
+                  android:verticalSpacing="10dp"
+                  android:horizontalSpacing="10dp"
+                  android:columnWidth="90dp"
+                  android:stretchMode="columnWidth"
+                  android:gravity="center"
+                  android:listSelector="@drawable/docs_grid_item_selector"
+                />
+    </RelativeLayout>
+
+</LinearLayout>
+

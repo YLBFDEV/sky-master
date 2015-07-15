@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+    <ImageView
+            android:id="@+id/iv_notice_attachment_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_gray_accessory"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+    <TextView
+            android:id="@+id/iv_notice_attachment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是附件1"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_notice_attachment_pic"
+            android:layout_centerVertical="true"/>
+
+    <ImageView
+            android:id="@+id/iv_notice_attachment_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_down_arrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+</RelativeLayout>

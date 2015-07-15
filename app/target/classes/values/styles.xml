@@ -1,0 +1,278 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Application theme. -->
+    <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textSize">@dimen/textsize_default</item>
+        <item name="android:editTextBackground">@drawable/edit_bg_selector</item>
+        <item name="android:windowSoftInputMode">adjustPan|stateHidden</item>
+    </style>
+
+    <style name="doc" parent="AppBaseTheme">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="leftbottomfield_background">@drawable/doc_field_bg</item>
+        <item name="keyNameTextColor">#333</item>
+    </style>
+
+    <style name="Theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- loading dialog -->
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="ListBase">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:listSelector">@drawable/btn_selector</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:smoothScrollbar">true</item>
+        <item name="android:fastScrollEnabled">false</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:divider">@color/transparent</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="ptrAnimationStyle">rotate</item>
+        <item name="ptrListViewExtrasEnabled">true</item>
+        <item name="ptrMode">both</item>
+    </style>
+
+    <!--   alert_dialog begin  -->
+    <style name="alertdialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+
+    <style name="baseDoc">
+        <item name="android:textSize">@dimen/textsize_default</item>
+        <item name="android:textColor">@color/textcolor</item>
+    </style>
+
+    <!--top-bar-->
+    <style name="top_bar_button_base">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:padding">@dimen/button_margin</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:background">@drawable/btn_selector</item>
+    </style>
+
+    <style name="ver_line">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/transparent_black</item>
+    </style>
+
+    <style name="hor_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/transparent_black</item>
+    </style>
+
+    <style name="login_editor_split" parent="hor_line">
+        <item name="android:background">@color/login_editor_split</item>
+        <item name="android:layout_marginLeft">@dimen/login_editor_split_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/login_editor_split_margin_right</item>
+    </style>
+
+    <style name="login_editor_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/login_editor_background</item>
+        <item name="android:layout_marginLeft">@dimen/login_main_content_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/login_main_content_margin_left_right</item>
+        <item name="android:layout_marginTop">@dimen/login_editor_container_margin_top</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="editor_base">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:drawablePadding">@dimen/main_content_margin</item>
+        <item name="android:layout_margin">@dimen/main_content_margin</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/login_editor_text_color</item>
+        <item name="android:inputType">none</item>
+    </style>
+
+    <style name="login_button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/login_main_content_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/login_main_content_margin_left_right</item>
+        <item name="android:layout_marginTop">@dimen/login_button_margin_top</item>
+        <item name="android:background">@drawable/login_button_selector</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="attendance_button">
+        <item name="android:layout_marginLeft">@dimen/attendance_button_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/attendance_button_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/attendance_button_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/attendance_button_margin_top</item>
+    </style>
+    <style name="home_header">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_home_header</item>
+    </style>
+
+    <style name="top_control_base">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/top_control_margin_top</item>
+    </style>
+
+    <style name="top_left_button" parent="top_control_base">
+        <item name="android:layout_marginLeft">@dimen/main_content_margin</item>
+    </style>
+
+    <style name="top_right_button" parent="top_control_base">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/main_content_margin</item>
+    </style>
+
+    <style name="top_title_text" parent="top_control_base">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="home_top_title_text_user_name" parent="top_title_text">
+        <item name="android:layout_centerInParent">false</item>
+        <item name="android:layout_toRightOf">@id/setting</item>
+        <item name="android:layout_alignBaseline">@id/setting</item>
+        <item name="android:layout_marginLeft">@dimen/main_content_margin</item>
+    </style>
+
+
+    <style name="module_page_container">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">@dimen/main_content_margin</item>
+    </style>
+
+    <style name="page_indicator_container">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/page_indicator_container_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="window_foot">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/homepage_foot_height</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="window_foot_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">@dimen/window_foot_button_padding_left_right</item>
+        <item name="android:paddingRight">@dimen/window_foot_button_padding_left_right</item>
+        <item name="android:textColor">@color/text_gray_white</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/home_foot_item_selector</item>
+    </style>
+
+    <style name="window_foot_split" parent="ver_line">
+        <item name="android:background">@color/home_footer_split</item>
+    </style>
+
+    <style name="field_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">@dimen/doc_keyname_minwidth</item>
+        <item name="android:gravity">end</item>
+        <item name="android:padding">@dimen/view_padding</item>
+    </style>
+
+    <style name="setting_user_avatar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/main_content_margin</item>
+        <item name="android:src">@drawable/set_user_avatar</item>
+    </style>
+
+    <style name="setting_user_info_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_below">@id/user_avatar</item>
+        <item name="android:layout_marginTop">@dimen/main_content_margin</item>
+        <item name="android:background">@drawable/set_black</item>
+    </style>
+
+    <style name="setting_user_info_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/setting_user_info_padding</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+    </style>
+
+    <style name="setting_menu_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/setting_menu_item_height</item>
+        <item name="android:paddingLeft">@dimen/setting_menu_item_padding_left</item>
+        <item name="android:textColor">@color/text_gray_white</item>
+        <item name="android:textSize">@dimen/textsize_large</item>
+        <item name="android:drawablePadding">@dimen/setting_menu_item_padding_left</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:background">@drawable/setting_menu_item_selector</item>
+    </style>
+
+    <style name="setting_menu_split" parent="hor_line">
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/setting_menu_split</item>
+    </style>
+
+    <style name="setting_exit_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/setting_exit_button_height</item>
+        <item name="android:layout_marginTop">@dimen/setting_exit_button_margin_top</item>
+        <item name="android:layout_marginLeft">@dimen/setting_exit_button_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/setting_exit_button_margin_left_right</item>
+        <item name="android:textColor">@color/text_gray_white</item>
+        <item name="android:textSize">@dimen/textsize_large</item>
+        <item name="android:background">@drawable/set_btn</item>
+    </style>
+
+    <style name="affair_menu_board_item_base">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="affair_menu_board_item_width_text" parent="affair_menu_board_item_base">
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:textColor">@color/affair_menu_board_text_color</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

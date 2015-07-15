@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/attendance_bg">
+    <include layout="@layout/top_bar"/>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+        <ImageButton android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/arrow_left"
+                     style="@style/top_bar_button_base"
+                     android:padding="9dp"
+                     android:src="@drawable/ic_arrow_left"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:text="2015年6月"
+                  android:id="@+id/year_month"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/textsize_default"/>
+        <ImageButton android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentRight="true"
+                     android:id="@+id/arrow_right"
+                     style="@style/top_bar_button_base"
+                     android:padding="9dp"
+                     android:src="@drawable/ic_arrow_right"/>
+    </RelativeLayout>
+    <com.skytech.android.widgets.CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:gravity="center">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:drawableLeft="@drawable/dot_green"
+                  android:drawablePadding="@dimen/view_padding"
+                  android:text="正常考勤"
+                  android:layout_margin="@dimen/view_margin"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:drawableLeft="@drawable/dot_red"
+                  android:drawablePadding="@dimen/view_padding"
+                  android:layout_margin="@dimen/view_margin"
+                  android:text="异常考勤"/>
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/btn_exception_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="异常列表"
+            android:padding="@dimen/attendance_button_padding"
+            style="@style/attendance_button"
+            android:textColor="@color/white"
+            android:background="@drawable/button_blue"/>
+</LinearLayout>

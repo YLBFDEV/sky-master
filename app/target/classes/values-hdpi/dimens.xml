@@ -1,0 +1,19 @@
+<resources>
+    <!--doc-->
+    <dimen name="doc_keyname_minwidth">96dp</dimen>
+    <dimen name="doc_field_minwidth">50dp</dimen>
+
+    <!-- general text size -->
+    <dimen name="textsize_large">19sp</dimen>
+    <dimen name="textsize_middle">18sp</dimen>
+    <dimen name="textsize_default">16sp</dimen>
+    <dimen name="textsize_small">14sp</dimen>
+
+    <!-- general -->
+    <dimen name="view_margin">8dp</dimen>
+    <dimen name="view_padding">5dp</dimen>
+
+    <dimen name="page_indicator_container_height">10dp</dimen>
+    <dimen name="window_foot_button_padding_left_right">20dp</dimen>
+    <dimen name="top_control_margin_top">5dp</dimen>
+</resources>

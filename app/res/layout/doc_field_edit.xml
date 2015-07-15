@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView  style="@style/field_title"
+              android:layout_gravity="center_vertical"
+              android:id="@+id/field_title"
+              android:gravity="center"/>
+    <View android:layout_height="match_parent"
+          android:layout_width="1dp"
+          android:background="@color/transparent"
+          android:id="@+id/divider"/>
+    <EditText android:layout_weight="1"
+              android:layout_height="wrap_content"
+              android:layout_width="0dp"
+              android:textSize="@dimen/textsize_default"
+              android:textColor="@color/textcolor"
+              android:drawablePadding="@dimen/view_padding"
+              android:padding="@dimen/view_padding"
+              android:id="@+id/field_value"/>
+</merge>

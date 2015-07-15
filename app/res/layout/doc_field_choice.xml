@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView  style="@style/field_title"
+              android:layout_gravity="center_vertical"
+              android:id="@+id/field_title"
+              android:gravity="center"/>
+    <View android:layout_height="match_parent"
+          android:layout_width="1dp"
+          android:background="@color/transparent"
+          android:id="@+id/divider"/>
+    <LinearLayout
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:drawablePadding="@dimen/view_padding"
+            android:padding="@dimen/view_padding"
+            android:orientation="horizontal">
+        <TextView android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:layout_width="match_parent"
+                  android:textColor="@color/textcolor"
+                  android:id="@+id/field_value"
+                  android:minWidth="@dimen/doc_field_minwidth"/>
+        <TextView android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:layout_width="match_parent"
+                  android:layout_marginLeft="5dp"
+                  android:textColor="@color/textcolor"
+                  android:hint=""
+                  android:id="@+id/field_sub_value"
+                  android:minWidth="@dimen/doc_field_minwidth"
+                  android:visibility="gone"/>
+    </LinearLayout>
+
+</merge>
